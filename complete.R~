@@ -6,11 +6,11 @@ complete <- function(directory, id = 1:332) {
 	       if(i == id[1]) {
                     nobs <- outp                    
 		    } else {
-                    nobs <- c(nobs, outp)
+                    nobs <- c(outp,nobs)
                     }
 
 	 }
 	 total <- cbind(id, nobs)
-	 	 total
+	 	 print(total)
          
 }
